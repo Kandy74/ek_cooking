@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>产品大类添加系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/新增.png</normaloff>../img/新增.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>411</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>大类添加</string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>281</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>格式：0000,00（占位）00（序号）</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>281</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>填写大类名称</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>371</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>备注说明：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>53</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>大类代码：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>53</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>大类名称：</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>381</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>EK烘焙 产品大类添加系统</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>500</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../geological_supervision_system/img/新增.png</normaloff>../../geological_supervision_system/img/新增.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>500</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../geological_supervision_system/img/reset_ico.png</normaloff>../../geological_supervision_system/img/reset_ico.png</iconset>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>411</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>大类列表</string>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>391</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
