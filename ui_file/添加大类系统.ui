@@ -29,7 +29,7 @@
    <property name="title">
     <string>大类添加</string>
    </property>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="line_type_id">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -42,7 +42,7 @@
      <string>格式：0000,00（占位）00（序号）</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="line_type_name">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -55,7 +55,7 @@
      <string>填写大类名称</string>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QPlainTextEdit" name="plain_decs">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -113,7 +113,7 @@
     <string>EK烘焙 产品大类添加系统</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pb_add">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -130,7 +130,7 @@
      <normaloff>../../geological_supervision_system/img/新增.png</normaloff>../../geological_supervision_system/img/新增.png</iconset>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pb_reset">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -159,7 +159,7 @@
    <property name="title">
     <string>大类列表</string>
    </property>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QTableWidget" name="tab_type">
     <property name="geometry">
      <rect>
       <x>10</x>
