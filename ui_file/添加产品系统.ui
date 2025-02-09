@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>773</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>产品添加系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/新增.png</normaloff>../img/新增.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>401</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>产品类别</string>
+   </property>
+   <widget class="QLineEdit" name="s_type_id">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>332</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>类别代码：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>类别名称：</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tab_type">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>361</width>
+      <height>581</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="s_type_id_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>332</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_search">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>搜索</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/search.png</normaloff>../img/search.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_clear">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/更新.png</normaloff>../img/更新.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>20</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>EK烘焙 产品添加系统</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_add">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>720</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../geological_supervision_system/img/新增.png</normaloff>../../geological_supervision_system/img/新增.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_reset">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>720</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../geological_supervision_system/img/reset_ico.png</normaloff>../../geological_supervision_system/img/reset_ico.png</iconset>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>370</y>
+     <width>321</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>产品添加</string>
+   </property>
+   <widget class="QPlainTextEdit" name="plain_product_decs">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>291</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>备注说明：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_product_name">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>332</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>产品名称：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>产品代码：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_product_id">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>332</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>70</y>
+     <width>321</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>产品类别信息</string>
+   </property>
+   <widget class="QPlainTextEdit" name="plain_type_decs">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>301</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>您所选择的产品类别代码：
+产品类别名称：
+备注说明：</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>s_type_id</tabstop>
+  <tabstop>s_type_id_2</tabstop>
+  <tabstop>pb_clear</tabstop>
+  <tabstop>pb_search</tabstop>
+  <tabstop>plain_type_decs</tabstop>
+  <tabstop>line_product_id</tabstop>
+  <tabstop>line_product_name</tabstop>
+  <tabstop>plain_product_decs</tabstop>
+  <tabstop>pb_add</tabstop>
+  <tabstop>pb_reset</tabstop>
+  <tabstop>tab_type</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

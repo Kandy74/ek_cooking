@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>产品类别信息维护系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/整改通知.png</normaloff>../img/整改通知.png</iconset>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">

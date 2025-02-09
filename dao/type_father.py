@@ -51,9 +51,11 @@ def type_father_exist(type_id: str, type_name: str):
         close_con(con, cursor)
 
 
-def get_all_type_father():
+def search_type_father(type_name=None, type_id=None):
     """
-    获取所有烘焙大类
+    搜索烘焙大类
+    :param type_name:
+    :param type_id:
     :return:
     """
     con = None
@@ -61,6 +63,10 @@ def get_all_type_father():
     try:
         con, cursor = get_con()
         sql = "select * from t_type_father"
+        if type_name:
+            sql += f" where type_name like '%{type_name}%'"
+        if type_id:
+            sql += f" where type_id like '%{type_id}%'"
         cursor.execute(sql)
         result = cursor.fetchall()
         return result
@@ -71,7 +77,49 @@ def get_all_type_father():
         close_con(con, cursor)
 
 
+def delete_type_father(type_id: str):
+    """
+    删除烘焙大类
+    :param type_id:
+    :return:
+    """
+    con = None
+    cursor = None
+    try:
+        con, cursor = get_con()
+        sql = f"delete from t_type_father where type_id='{type_id}'"
+        cursor.execute(sql)
+        return cursor.rowcount
+    except Exception as e:
+        print(e)
+        con.rollback()
+        return 0
+    finally:
+        close_con(con, cursor)
+
+
+def update_type_father(type_father: FatherType):
+    """
+    更新烘焙大类
+    :param type_father:
+    :return:
+    """
+    con = None
+    cursor = None
+    try:
+        con, cursor = get_con()
+        sql = (f"update t_type_father set type_name='{type_father.type_name}',desc='{type_father.desc}' "
+               f"where type_id='{type_father.type_id}'")
+        cursor.execute(sql)
+        return cursor.rowcount
+    except Exception as e:
+        print(e)
+        con.rollback()
+        return 0
+    finally:
+        close_con(con, cursor)
+
+
 if __name__ == '__main__':
-    type0 = FatherType(type_id='0001', type_name='蛋糕类', desc='好吃的蛋糕哟')
-    reply = add_type_father(type0)
+    reply = search_type_father(type_id='0001')
     print(reply)

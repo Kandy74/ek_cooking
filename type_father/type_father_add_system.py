@@ -1,7 +1,7 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 from PyQt6.QtWidgets import QWidget, QTableWidgetItem, QAbstractItemView, QHeaderView
-
-from dao.type_father import add_type_father, type_father_exist, get_all_type_father
+import sys
+from dao.type_father import add_type_father, type_father_exist, search_type_father
 from entity.type_father_model import FatherType
 
 
@@ -100,6 +100,8 @@ class Ui_Form(QWidget):
             QtWidgets.QMessageBox.warning(self, "警告", "类别代码或名称不能为空！")
         elif type_father_exist(type_id, type_name):
             QtWidgets.QMessageBox.warning(self, "警告", "该类别已存在！请检查类别代码和名称！")
+        elif len(type_id) != 4:
+            QtWidgets.QMessageBox.warning(self, "警告", "类别代码格式错误！请检查！")
         else:
             new_type = FatherType(type_id, type_name, decs)
             if add_type_father(new_type):
@@ -121,7 +123,7 @@ class Ui_Form(QWidget):
         :return:
         """
         # 通过dao方法，传入table列表变量里
-        table =  get_all_type_father()
+        table = search_type_father()
 
         row = 0
         if table:
@@ -145,9 +147,10 @@ class Ui_Form(QWidget):
         # 设置表头
         self.tab_type.setHorizontalHeaderLabels(['产品类别代码', '产品类别名称', '备注'])
 
-if __name__ == '__main__':
-    import sys
 
+
+
+if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     ui = Ui_Form()
     ui.show()
