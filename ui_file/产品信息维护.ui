@@ -201,7 +201,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="edeit_desc">
+   <widget class="QPlainTextEdit" name="edit_desc">
     <property name="geometry">
      <rect>
       <x>10</x>

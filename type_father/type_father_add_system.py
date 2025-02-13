@@ -12,10 +12,10 @@ class Ui_Form(QWidget):
         self.show_type()
 
     def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(453, 534)
+        super().setObjectName("Form")
+        self.resize(453, 534)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../img/新增.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("img/新增.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         Form.setWindowIcon(icon)
         self.groupBox = QtWidgets.QGroupBox(parent=Form)
         self.groupBox.setGeometry(QtCore.QRect(20, 70, 411, 201))
@@ -46,14 +46,14 @@ class Ui_Form(QWidget):
         # 绑定按钮点击事件
         self.pb_add.clicked.connect(self.add_type)
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../../geological_supervision_system/img/新增.png"), QtGui.QIcon.Mode.Normal,
+        icon1.addPixmap(QtGui.QPixmap("img/新增.png"), QtGui.QIcon.Mode.Normal,
                         QtGui.QIcon.State.Off)
         self.pb_add.setIcon(icon1)
         self.pb_add.setObjectName("pb_add")
         self.pb_reset = QtWidgets.QPushButton(parent=Form)
         self.pb_reset.setGeometry(QtCore.QRect(300, 500, 75, 23))
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../../geological_supervision_system/img/reset_ico.png"), QtGui.QIcon.Mode.Normal,
+        icon2.addPixmap(QtGui.QPixmap("img/reset_ico.png"), QtGui.QIcon.Mode.Normal,
                         QtGui.QIcon.State.Off)
         self.pb_reset.setIcon(icon2)
         self.pb_reset.setObjectName("pb_reset")

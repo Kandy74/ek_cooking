@@ -6,7 +6,7 @@ def get_con():
     链接数据库
     :return:
     """
-    con = connect('../db/cooking_data.db')
+    con = connect('E:/0AFile/ek_cooking/db/cooking_data.db')
     cursor = con.cursor()
     return con, cursor
 

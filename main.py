@@ -1,12 +1,17 @@
 import sys
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtGui import QAction
 from PyQt6.QtWidgets import QMainWindow, QApplication
+
+from product import product_add_system, product_manage_system
+from type_father import type_father_add_system, type_father_manage_system
 
 
 class Ui_MainWindow(QMainWindow):
     def __init__(self):
         super(Ui_MainWindow, self).__init__()
         self.setupUi(self)
+        self.type_father_add_system = None
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -63,14 +68,21 @@ class Ui_MainWindow(QMainWindow):
         icon2.addPixmap(QtGui.QPixmap("img/整改通知.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.action_4.setIcon(icon2)
         self.action_4.setObjectName("action_4")
+        # 打开产品类别管理窗口
+        self.action_4.triggered.connect(self.open_type_father_manage_system)
         self.action_6 = QtGui.QAction(parent=MainWindow)
         self.action_6.setIcon(icon1)
         self.action_6.setObjectName("action_6")
+        # 打开产品添加窗口
+        self.action_6.triggered.connect(self.open_product_add_system)
         self.action_7 = QtGui.QAction(parent=MainWindow)
         self.action_7.setIcon(icon2)
         self.action_7.setObjectName("action_7")
+        # 打开产品管理窗口
+        self.action_7.triggered.connect(self.open_product_manage_system)
         self.menu_2.addAction(self.action_3)
         self.menu_2.addAction(self.action_4)
+
         self.menu_3.addSeparator()
         self.menu_3.addAction(self.action_6)
         self.menu_3.addAction(self.action_7)
@@ -79,6 +91,9 @@ class Ui_MainWindow(QMainWindow):
         self.menubar.addAction(self.menu.menuAction())
         self.menubar.addAction(self.menu_4.menuAction())
         self.menubar.addAction(self.menu_5.menuAction())
+        # 点击action_3打开type_father_add_system窗口
+
+        self.action_3.triggered.connect(self.open_type_father_add_system)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -95,6 +110,38 @@ class Ui_MainWindow(QMainWindow):
         self.action_4.setText(_translate("MainWindow", "产品类别信息维护"))
         self.action_6.setText(_translate("MainWindow", "添加产品"))
         self.action_7.setText(_translate("MainWindow", "产品类别信息维护"))
+
+    def open_type_father_add_system(self):
+        """
+        打开产品类别添加窗口
+        :return:
+        """
+        self.type_father_add_system = type_father_add_system.Ui_Form()
+        self.type_father_add_system.show()
+
+    def open_type_father_manage_system(self):
+        """
+        打开产品类别管理窗口
+        :return:
+        """
+        self.type_father_manage_system = type_father_manage_system.Ui_Form()
+        self.type_father_manage_system.show()
+
+    def open_product_add_system(self):
+        """
+        打开产品添加窗口
+        :return:
+        """
+        self.product_add_system = product_add_system.Ui_Form()
+        self.product_add_system.show()
+
+    def open_product_manage_system(self):
+        """
+        打开产品管理窗口
+        :return:
+        """
+        self.product_manage_system = product_manage_system.Ui_Form()
+        self.product_manage_system.show()
 
 
 if __name__ == '__main__':

@@ -16,7 +16,7 @@ class Ui_Form(QWidget):
         Form.setObjectName("Form")
         Form.resize(702, 688)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../img/整改通知.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("img/整改通知.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         Form.setWindowIcon(icon)
         self.groupBox = QtWidgets.QGroupBox(parent=Form)
         self.groupBox.setGeometry(QtCore.QRect(20, 70, 661, 61))
@@ -30,7 +30,7 @@ class Ui_Form(QWidget):
         self.pb_search = QtWidgets.QPushButton(parent=self.groupBox)
         self.pb_search.setGeometry(QtCore.QRect(560, 30, 75, 23))
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../img/search.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("img/search.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pb_search.setIcon(icon1)
         self.pb_search.setObjectName("pb_search")
         # 绑定槽函数，搜索按钮点击事件
@@ -70,7 +70,7 @@ class Ui_Form(QWidget):
         self.pb_modify = QtWidgets.QPushButton(parent=self.groupBox_3)
         self.pb_modify.setGeometry(QtCore.QRect(70, 180, 75, 23))
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../img/modify.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("img/modify.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pb_modify.setIcon(icon2)
         self.pb_modify.setObjectName("pb_modify")
         # 绑定槽函数，修改按钮点击事件
@@ -78,7 +78,7 @@ class Ui_Form(QWidget):
         self.pb_reset = QtWidgets.QPushButton(parent=self.groupBox_3)
         self.pb_reset.setGeometry(QtCore.QRect(310, 180, 75, 23))
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("../img/reset_ico.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap("img/reset_ico.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pb_reset.setIcon(icon3)
         self.pb_reset.setObjectName("pb_reset")
         # 绑定槽函数，重置按钮点击事件
@@ -86,7 +86,7 @@ class Ui_Form(QWidget):
         self.pushButton_3 = QtWidgets.QPushButton(parent=self.groupBox_3)
         self.pushButton_3.setGeometry(QtCore.QRect(520, 180, 75, 23))
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("../img/delete.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon4.addPixmap(QtGui.QPixmap("img/delete.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_3.setIcon(icon4)
         self.pushButton_3.setObjectName("pushButton_3")
         # 绑定槽函数，修改按钮点击事件,删除信息
